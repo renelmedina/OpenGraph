@@ -123,12 +123,12 @@ switch ($registronro) {
             //echo "- Ultimo ID creado $UltimoIdInsertado";
             $GenerarCodigoInterno=generarRandomString(11,$UltimoIdInsertado);
             $ConexionBDOpenGraph= new ConexionBDOpenGraph();
-            $stmtScriptSQL=$ConexionBDOpenGraph->prepare("CALL ActualizaUrlOPenGraph(:varIdOpenGraph,:varCanonical,:varOgUrl,:varurlDestinoRecamedi,:varCodInterno)");
+            $stmtScriptSQL=$ConexionBDOpenGraph->prepare("CALL ActualizaUrlOPenGraph(:varIdOpenGraph,:varCanonical,:varOgUrl,:varUrlDestinoRecamedi,:varCodInterno)");
             $stmtScriptSQL->execute(array(
                 ':varIdOpenGraph'=>$UltimoIdInsertado,
                 ':varCanonical'=>$txturldestino,
                 ':varOgUrl'=>'https://www.recamedi.com/opengraph/?l='.$GenerarCodigoInterno,
-                ':varurlDestinoRecamedi'=>'https://www.recamedi.com/opengraph/?l='.$GenerarCodigoInterno,
+                ':varUrlDestinoRecamedi'=>'https://www.recamedi.com/opengraph/?l='.$GenerarCodigoInterno,
                 ':varCodInterno'=>$GenerarCodigoInterno));
             //echo $txturldestino;
             $num_rows_SQL = $stmtScriptSQL->rowCount();
@@ -210,7 +210,7 @@ switch ($registronro) {
             :varTwitterImage,
             :varApplicationLdJson,
             :varUrlDestinoFinal,
-            :varurlDestinoRecamedi,
+            :varUrlDestinoRecamedi,
             :vartextoboton,
             :varTipoLink,
             :varValorLinkMenetizado)"
@@ -241,7 +241,7 @@ switch ($registronro) {
             ':varTwitterImage'=>$NombreArchivoEnBD,
             ':varApplicationLdJson'=>$jsonLd,
             ':varUrlDestinoFinal'=>$txturldestino,
-            ':varurlDestinoRecamedi'=>$txtUrlRecamediDestino,
+            ':varUrlDestinoRecamedi'=>$txtUrlRecamediDestino,
             ':vartextoboton'=>$cboBotonValor,
             ':varTipoLink'=>$cboTipoEnlace,
             ':varValorLinkMenetizado'=>$txtLinkMonetizado
