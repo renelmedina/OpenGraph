@@ -37,11 +37,6 @@ if(!empty($cod)){
 	if ($num_rows_SQL>0) {
       foreach($stmtScriptSQL as $ListaSQL) {
         $idUsuario=$ListaSQL["idUsuario"];
-        $Usuario=$ListaSQL["Usuario"];
-        $Contrasena=$ListaSQL["Contrasena"];
-        $Nombre=$ListaSQL["Nombre"];
-        $Email=$ListaSQL["Email"];
-        $idUsuario=$ListaSQL["idUsuario"];
 		$description=$ListaSQL["description"];
 		$canonical=$ListaSQL["canonical"];
 		$ogLocale=$ListaSQL["ogLocale"];

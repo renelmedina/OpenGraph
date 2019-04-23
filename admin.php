@@ -98,7 +98,7 @@ $ConexionBDOpenGraph=null;
 				$urlDestinoFinal=$ListaSQL["urlDestinoFinal"];
 				$urlDestinoRecamedi=$ListaSQL["urlDestinoRecamedi"];
 				echo "<tr>";
-				echo "<td>$num</td>";
+				echo "<td>$num -> $idOpenGraph</td>";
 				echo "<td>$ogTitle</td>";
 				echo "<td>$urlDestinoRecamedi</a></td>";
 				echo "<td>$urlDestinoFinal</td>";

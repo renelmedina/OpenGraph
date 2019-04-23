@@ -250,7 +250,7 @@ switch ($registronro) {
         if ($num_rows_SQL>0) {
             $Mensaje.="¡Cambios guardados! de tu Open Graph. Compartelo en tus redes sociales";
         }else{
-            $Mensaje.="- No se pudo registrar. Intentelo de nuevo";
+            $Mensaje.="- No se pudo actualizar. Intentelo de nuevo";
         }
         $ConexionBDOpenGraph=null;
         //echo $Mensaje;
