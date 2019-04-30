@@ -31,13 +31,20 @@ fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <!--<div class="fb-like" data-href="https://www.facebook.com/recamedi/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>-->
-<h1>Seriales Eset de Larga Duracion</h1>
-<p style="padding: 2em;">Para poder acceder a las licencias de larga duracion debes de pagar con Like de facebook y saltar la publicidad 2 veces. Las licencias se actualizan semana a semana</p>
+<h1>Seriales Normales</h1>
+<p style="padding: 2em;">Para poder acceder a las licencias debes pagar con 'Suscribe' y saltar la publicidad 2 veces. Las licencias se actualizan semana a semana</p>
 
-<h2 style="text-align: center;">Pagar con "Me Gusta" de Facebook </h2>
-<div style="border: 0.2em solid blue;display: flex;justify-content: center;" class="fb-like" data-href="https://www.facebook.com/recamedi/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>
+<h2 style="text-align: center;">Pagar con "Suscribe" de youtube </h2>
+<!--<div style="border: 0.2em solid blue;display: flex;justify-content: center;" class="fb-like" data-href="https://www.facebook.com/recamedi/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>-->
 
-<span>Si no funciona tu like, prueba esta opcion</span>
+<!--<script src="https://apis.google.com/js/platform.js"></script>
+
+<div align="center" style="width: 200px; height: 400px; border: solid blue 1px; position: absolute;" class="g-ytsubscribe" data-channelid="UC2Ed1HO0gm00XSxuXTEt1iA" data-layout="full" data-count="default"></div>-->
+<p align="center" style="margin: 2em;"><a id="enlaceYoutube"href="https://www.youtube.com/channel/UC2Ed1HO0gm00XSxuXTEt1iA?sub_confirmation=1" style="padding: 1em; background-color: blue; color: #fff; margin: 1em; position: relative;" target="_blank">Suscribirse a canal</a></p>
+
+
+
+<p align="center"><span>Si no funciona tu like, prueba esta opcion</span></p>
 <h2 style="text-align: center;">Pagar con Publicidad y vista de video de youtube. </h2>
 <p align="center">
 	
@@ -48,14 +55,20 @@ fjs.parentNode.insertBefore(js, fjs);
 window.fbAsyncInit = function() {
 	FB.Event.subscribe('edge.create',function(response) {
 		//alert('You liked the URL: ' + response);
-		window.location="http://cutwin.com/OrVbboyh"
+		window.location="https://cutwin.com/nkne"
 
 	});
 };
 $("#Enlace").click(function(event) {
-	window.location="http://cutwin.com/OrVbboyh"
+	window.location="https://cutwin.com/nkne"
+});
+$("#enlaceYoutube").click(function(event) {
+	window.location="https://shorto.io/nrZ3"
 });
 </script>
+
+
+
 </body>
 </html>
 
