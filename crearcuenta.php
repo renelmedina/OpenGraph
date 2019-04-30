@@ -10,11 +10,11 @@ $varEmail=(coger_dato_externo("varEmail")==null?'':coger_dato_externo("varEmail"
 $Mensaje="";
 if (!empty($varUsuario) && !empty($varContrasena) && !empty($varContrasena) && !empty($varContrasena)) {
 	$ConexionBDOpenGraph= new ConexionBDOpenGraph();
-    $stmtScriptSQL=$ConexionBDOpenGraph->prepare("CALL CrearUsuario(:varTipoUsuario:varNombre,:varEmail,:varUsuario,:varContrasena)");
+    $stmtScriptSQL=$ConexionBDOpenGraph->prepare("CALL CrearUsuario(:varTipoUsuario,:varNombre,:varEmail,:varUsuario,:varContrasena)");
     $stmtScriptSQL->execute(array(
     	':varTipoUsuario'=>2,
 		':varNombre'=>$varNombre,
-		':varEmail'=>$varContrasena,
+		':varEmail'=>$varEmail,
 		':varUsuario'=>$varUsuario,
 		':varContrasena'=>$varContrasena
     ));
