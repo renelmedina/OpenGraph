@@ -15,8 +15,10 @@ if (!empty($varUsuario) && !empty($varContrasena)) {
 	if ($num_rows_SQL>0) {
       foreach($stmtScriptSQL as $ListaSQL) {
         $idUsuario=$ListaSQL["idUsuario"];
+        $TipoUsuario=$ListaSQL["TipoUsuario"];
+        $NombreTipo=$ListaSQL["NombreTipo"];
+        $Ruta=$ListaSQL["Ruta"];
         $Usuario=$ListaSQL["Usuario"];
-        $Contrasena=$ListaSQL["Contrasena"];
         $Nombre=$ListaSQL["Nombre"];
         $Email=$ListaSQL["Email"];
       }
@@ -26,7 +28,8 @@ if (!empty($varUsuario) && !empty($varContrasena)) {
       $_SESSION["Usuario"]=$Usuario;
       $_SESSION["Nombre"]=$Nombre;
       $_SESSION["Email"]=$Email;
-      redirigir("admin.php");//AlgunaPagina
+      //redirigir("admin.php");//AlgunaPagina
+      redirigir($Ruta);//AlgunaPagina
       $Mensaje="Acceco Correcto";
 	}else{
 		$Mensaje="Usuario y/o contraseña incorrectos";
