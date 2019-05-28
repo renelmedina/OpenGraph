@@ -64,6 +64,7 @@ $("#Enlace").click(function(event) {
 });
 $("#enlaceYoutube").click(function(event) {
 	window.location="https://adnangamer.com/nsoiyoZ6"
+	//window.location="https://cutwin.com/nkne"
 });
 </script>
 
